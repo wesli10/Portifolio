@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --white: #fff;
+    --orange: #ab51ce;
+    --orange-hover: #381bbb;
+    --main-background: #46636d;
+    --second-background: #364d55;
+    --project-button: #ab51ce;
+    --project-button-hover: #381bbb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-background);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    background-color: var(--main-background);
+    z-index: 999;
+}
+
+#headerContainer {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 10%;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--white);
+    margin-left: 50px;
+    transition: .25s ease-in-out;
+}
+
+header a:hover{
+    color: var(--orange);
+}
+
+#logo {
+    margin: 0;
+}
+
+.btnMenuDisplay {
+    display: none;
+}
+
+/* apresentation */
+
+#apresentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto 10%;
+    padding-top: 85px;
+    height: 1000px;
+    color: var(--white);
+}
+
+.textApresentation {
+    width: 50%;
+}
+
+#apresentation h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#apresentation h1 span {
+    color: var(--orange);
+    font-size: 3rem;
+}
+
+#apresentation p {
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+
+.imageApresentation {
+    width: 50%;
+}
+
+.imageApresentation img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#imageDesktop {
+    display: flex;
+    margin: auto;
+}
+
+#imgMobile {
+    display: none;
+}
+
+.buttonLink {
+    padding: 10px 25px;
+    background-color: var(--orange);
+    transition: .25s ease-in-out;
+    border: none;
+    border-radius: 3px;
+}
+
+.buttonLink a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.buttonLink:hover {
+    border-radius: 5px;
+    background-color: var(--orange-hover);
+}
+
+/* title section */
+
+.sectionTitleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.dashLarge {
+    margin-right: 10px;
+    width: 75px;
+    height: 5px;
+}
+
+.sectionTitle {
+    color: var(--white);
+    font-weight: 300;
+}
+
+.resumeSection {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 20px;
+}
+
+/* section project */
+
+#contentProject {
+    display: flex;
+}
+
+#textContent {
+    max-width: 50%;
+}
+
+#imageContent {
+    margin: auto;
+}
+
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projectsSection {
+    color: var(--white);
+    background-color: var(--second-background);
+}
+
+.contentContainer {
+    margin: auto 10%;
+    padding: 100px 0;
+}
+
+.projectButtons {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.projectButtons #showQuantityProject {
+    margin: 0 15px;
+}
+
+.nextAndLeftProject{
+    background-color: var(--project-button);
+    border: none;
+    width: 54px;
+    height: 54px;
+    transition: .25s ease-in-out;
+    
+}
+
+.nextAndLeftProject:hover {
+    border-radius: 5px;
+    background-color: var(--project-button-hover);
+}
+
+.projectButtons i {
+    color: var(--white);
+}
+
+.projectInfo {
+    margin-top: 50px;
+}
+
+.projectInfo h2 {
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+.projectInfo div {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.projectInfo img {
+    margin-right: 10px;
+    width: 30px;
+    height: 5px;
+}
+
+.projectInfo p {
+    line-height: 2rem;
+    padding-bottom: 35px;
+}
+
+.projectImage {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.projectImage img {
+    width: 500px;
+    border-radius: 3px;
+}
+
+/* technologies section */
+#technologiesExp {
+    margin: 35px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.techContainer {
+    width: 200px;
+    height: 200px;
+    background-color: var(--second-background);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.techName {
+    font-size: 1.5rem;
+    margin: auto;
+    color: var(--white);
+}
+
+.fab {
+    font-size: 7rem;
+    margin: auto;
+    color: var(--orange);
+}
+
+#technologiesExpLeft {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#technologiesExpLeft div {
+    margin-right: 70px;
+}
+
+#aboutMeSection {
+    background-color: var(--second-background);
+}
+
+ #profileImage {
+    object-fit: cover;
+     width: 100%;
+     height: 500px;
+ }
+
+ #infoContainer {
+     margin: auto 10%;
+     padding: 100px 0;
+     display: flex;
+     color: var(--white);
+ }
+
+ #aboutMe {
+    text-align: justify;
+ }
+
+ #infoLeft {
+     margin-right: 50px;
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+ }
+
+ #infoRight {
+     width: 50%;
+ }
+
+ #listContainer {
+     margin-top: 50px;
+     border: 1px solid var(--orange);
+     display: flex;
+ }
+
+ #listContainer a {
+     text-decoration: none;
+     color: var(--white);
+ }
+
+ #listContainer li {
+     list-style: none;
+     padding: 10px;
+ }
+
+#contactContainer {
+    margin: 0 10%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contactContainer #title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#contactContainer #title p {
+    color: var(--white);
+    margin: 15px 20px 0;
+}
+
+#contact h2 {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+#contactText {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#contactText div {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#contactText span {
+    color: var(--orange);
+}
+
+#iconsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+
+.contactLinkAndIcon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.contactIcons {
+    background-color: var(--second-background);
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.contactIcons .bi {
+    color: var(--orange);
+    font-size: 2rem;
+    transition: .5s ease-in-out;
+}
+
+.contactIcons:hover .bi {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+@media (max-width: 1080px) {
+
+    header svg {
+        width: 64px;
+    }
+
+    #headerContainer {
+        margin: 0 5%;
+    }
+
+    header a {
+        font-size: 1rem;
+    }
+
+    #apresentation {
+        align-content: center;
+        flex-wrap: wrap-reverse;
+        margin: auto 5%;
+    }
+
+    .textApresentation {
+        max-width: 100%;
+        margin-top: 25px;
+    }
+
+    #apresentation h1 {
+        font-size: 1.5rem;
+    }
+
+    #apresentation h1 span {
+        font-size: 1.5rem;
+    }
+
+    #apresentation p {
+        font-size: 1rem;
+        padding-bottom: 25px;
+    }
+
+    .imageApresentation {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .imageApresentation img {
+        width: 75%;
+    }
+
+    .contentContainer {
+        margin: auto 5%;
+        padding: 100px 0;
+    }
+
+    .textContent {
+        width: 100%;
+    }
+
+    .dashLarge {
+        margin-right: 10px;
+        width: 75px;
+        height: 5px;
+    }
+
+    .resumeSection {
+        padding: 20px 0;
+        font-size: 1.4rem;
+    }
+
+    .projectButtons {
+        display: flex;
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    .projectInfo h2 {
+        font-size: 2rem;
+    }
+
+    .projectInfo p {
+        line-height: 1.5rem;
+        padding-bottom: 35px;
+        text-align: justify;
+    }
+
+    #contentProject {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #textContent {
+        max-width: 100%;
+    }
+
+    #imageContent {
+        margin: auto;
+        margin-top: 75px;
+    }
+
+    .projectImage {
+        margin: 0;
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    #imageDesktop {
+        display: none;
+    }
+
+    #imgMobile {
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+    #technologiesExp {
+        justify-content: center;
+    }
+
+    .techContainer {
+        width: 90px;
+        height: 90px;
+        background-color: var(--second-background);
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .techName {
+        font-size: .8rem;
+        margin: auto;
+        color: var(--white);
+    }
+
+    .fab {
+        font-size: 60px;
+        margin: auto;
+        color: var(--orange);
+    }
+
+    #technologiesExpLeft div {
+        margin-right: 5px;
+    }
+
+    #profileImage {
+        width: 100%;
+    }
+
+    #infoContainer {
+        flex-wrap: wrap;
+        margin: auto 5%;
+    }
+
+    #infoRight {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #infoLeft {
+        width: 100%;
+        margin: 0;
+    }
+
+    #contact {
+        height: 550px;
+    }
+
+    #contactText {
+        flex-wrap: wrap;
+    }
+
+    #contactText p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        position: fixed;
+        max-width: 100%;
+        width: 100%;
+        top: 0;
+        height: 75px;
+        background-color: var(--main-background);
+        z-index: 999;
+    }
+
+    .btnMenuDisplay {
+        display: block;
+    }
+
+    .hideMenu {
+        height: 0;
+        visibility: hidden;
+        overflow-y: auto;
+    }
+
+    header a {
+        margin-left: 10px;
+    }
+
+    header .bi {
+        font-size: 2rem;
+        color: var(--white);
+        width: 36px;
+    }
+
+    header nav {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 70px);
+        width: 100%;
+        background-color: var(--main-background);
+        visibility: visible;
+        overflow-y: hidden;
+        transition: .6s ease-in-out;
+    }
+
+    nav a {
+        text-align: right;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    #apresentation {
+        height: 750px;
+        padding-top: 100px;
+    }
+
+    #apresentation p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+        padding: 0;
+    }
+
+    .textApresentation {
+        width: 100%;
+    }
+
+    .headerLinks {
+        padding: 15px 10px;
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 600;
+        border-bottom: 1px solid var(--orange);
+    }
+
+    .techContainer {
+        width: 80px;
+        height: 80px;
+        background-color: var(--second-background);
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .techName {
+        font-size: .6rem;
+    }
+
+    .fab {
+        font-size: 50px;
+    }
+
+    .resumeSection {
+        font-size: 1.3rem;
+    }
+
+    #aboutMe {
+        font-size: .8rem;
+    }
+
+    #contactContainer {
+        height: 500px;
+    }
+
+    #contact h2 {
+        font-size: 1.3rem;
+    }
+
+    #contactText {
+        justify-content: center;
+    }
+
+    #contactText span {
+        margin: 15px auto 0;
+    }
+
+    #contactContainer #title p {
+        margin: 0 10px;
+    }
+
+    #contactText div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactIcons {
+        width: 50px;
+        height: 50px;
+    }
+
+    .socialMedia {
+        justify-content: center;
+    }
+}
