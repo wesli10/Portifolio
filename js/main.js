@@ -9,8 +9,16 @@ const linkContainer = document.querySelector('#projectLink')
 const showQuantityProject = document.querySelector('#showQuantityProject')
 
 const projects = [
+
   {
+    name: 'Sistema Biblioteca em PHP',
+    description: 'Sistema CRUD Web para uma biblioteca, o BackEnd foi feito em PHP puro e o frontEnd foi feito com HTML, CSS e Bootstrap.',
+    imageDesktop: './imagens/bibliotecaDesktop.png',
+    link: 'https://github.com/wesli10/SistemaBiblioteca'
     
+  },
+  
+  {
     name: 'Template de testes funcionais Web',
     description: 'Este projeto se trata de um template de testes funcionais para Web em Java, com os recursos PageObject em uso da ferramenta Selenium WebDriver.',
     imageDesktop: './imagens/template.png',
@@ -23,7 +31,7 @@ const projects = [
       link: 'https://github.com/wesli10/CalculadoraJS'
   },
   {
-    
+      
       name: 'Pong Game',
       description: 'Este projeto se trata de um Pong game feito em C# com a Engine Unity',
       imageDesktop: './imagens/pong.png',
