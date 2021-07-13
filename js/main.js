@@ -10,6 +10,15 @@ const showQuantityProject = document.querySelector('#showQuantityProject')
 
 const projects = [
 
+
+  {
+    name: 'Assistente Virtual Celine',
+    description: "A ideia inicial era a automação de um processo simples do Windows e com o decorrer do desenvolvimento surgiu a ideia de criar uma ferramenta, a assistente Celine, que tem o objetivo de gerenciar os processos e operações no computador. A Celine foi desenvolvida em linguagem Python, com uso da biblioteca Speech Recognition para reconhecimento de voz, a Google Search para pesquisas web e consumindo a API OpenWeather para informações de clima.",
+    imageDesktop:'./imagens/Celine.jpg',
+    link: 'https://github.com/wesli10/CelineAssistenteVirtual'
+
+  },
+
   {
     name: 'Sistema Biblioteca em PHP',
     description: 'Sistema CRUD Web para uma biblioteca, o BackEnd foi feito em PHP puro e o frontEnd foi feito com HTML, CSS e Bootstrap.',
